@@ -1,0 +1,7 @@
+---
+- name: Test Ping su localhost
+  hosts: local
+  gather_facts: false
+  tasks:
+    - name: Eseguo il modulo ping
+      ping:
