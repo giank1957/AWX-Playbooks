@@ -1,0 +1,7 @@
+---
+- name: Test di Ping su host selezionati
+  hosts: "{{ target | default('all') }}"
+  gather_facts: false
+  tasks:
+    - name: Esegui il modulo ping
+      ping:
